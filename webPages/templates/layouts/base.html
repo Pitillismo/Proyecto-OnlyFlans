@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFlans</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="">
+        </div>
+        <ul class="opciones">
+            <li><a href="{% url "index" %}">Inicio</a></li>
+            <li><a href="{% url "about" %}">Acerca</a></li>
+            <li><a href="{% url "welcome" %}">Bienvenido</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+    {% endblock content %}
+<footer>
+    <p>© 2024 OnlyFlans. Todos los derechos reservados. By Catalina Millan & Alvaro Acevedo</p>
+</footer>
+</body>
+</html>
