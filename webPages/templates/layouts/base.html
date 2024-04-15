@@ -9,17 +9,21 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <img src="{% static 'images/logo.png' %}" alt="">
+        <div class='nav-container'>
+            <div class="logo">
+                <img src="{% static 'images/logo2.png' %}" alt="">
+            </div>
+            <ul class="opciones">
+                <li><a href="{% url "index" %}">Inicio</a></li>
+                <li><a href="{% url "about" %}">Acerca</a></li>
+                <li><a href="{% url "welcome" %}">Bienvenido</a></li>
+            </ul>
         </div>
-        <ul class="opciones">
-            <li><a href="{% url "index" %}">Inicio</a></li>
-            <li><a href="{% url "about" %}">Acerca</a></li>
-            <li><a href="{% url "welcome" %}">Bienvenido</a></li>
-        </ul>
     </nav>
-    {% block content %}
-    {% endblock content %}
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
 <footer>
     <p>© 2024 OnlyFlans. Todos los derechos reservados. By Catalina Millan & Alvaro Acevedo</p>
 </footer>

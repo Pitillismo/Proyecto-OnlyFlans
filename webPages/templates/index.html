@@ -1,20 +1,19 @@
-
 {% extends "layouts/base.html" %}
 {% block content %}
 {% load static %}
-    <header>
-        <div>
-            <h1>Bienvenidos a OnlyFlans</h1>
-        </div>
-        <div class="imagen-header">
-            <img src="{% static 'images/imagen1.jpeg' %}" alt="">
-        </div>
-        
-    </header>
-    <main>
-        <section>
-            <h2>Primera sección</h2>
+    <div>
+        <header>
+            <div>
+                <h1>Bienvenidos a OnlyFlans</h1>
+            </div>
+            <div class="imagen-header">
+                <img src="{% static 'images/imagen1.jpeg' %}" alt="">
+            </div>
+            
+        </header>
+        <section class='categorias'>
+            <h2>Categorias de productos</h2>
         </section>
-    </main>
+    </div>
 {% endblock content %}
 
