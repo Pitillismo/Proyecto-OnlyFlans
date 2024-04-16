@@ -1,7 +1,19 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-    <!-- Encabezado de la página -->
-
+    
+<!-- Encabezado de la página -->
+    <div class="row"> 
+        {% for flan in flanes%} 
+          <div class="card" style="width: 18rem;">
+            <img src="{{flan.image_url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{flan.name}}</h5>
+              <p class="card-text">{{flan.description}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
 
     <!-- Sección principal -->
     <div>

@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <h1>Contacto</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.customer_email.label_tag}}
+        {{form.customer_email}}
+        {{form.customer_name.label_tag}}
+        {{form.customer_name}}
+        {{form.message.label_tag}}
+        {{form.message}}
+
+    <button type="submit">Enviar</button>
+    </form>
+{% endblock content %}
