@@ -1,6 +1,6 @@
 from django.db import models
-import uuid
-from django.utils.text import slugify
+import uuid #crea un ID unico 
+from django.utils.text import slugify #
 
 # Create your models here. 
 # Haremos una tabla para nuestra base de datos.// Aca siempre hay que hacer Makemigrations y despues migrate
