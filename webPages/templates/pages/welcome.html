@@ -2,6 +2,7 @@
 {% block content %}
     
 <!-- Encabezado de la página -->
+    <h1>Bienvenido {{ user.username }}</h1>
     <div class="row"> 
         {% for flan in flanes%} 
           <div class="card" style="width: 18rem;">
@@ -9,7 +10,7 @@
             <div class="card-body">
               <h5 class="card-title">{{flan.name}}</h5>
               <p class="card-text">{{flan.description}}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         {% endfor %}

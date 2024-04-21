@@ -1,0 +1,12 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+{% if flan.is_private and not user.is_authenticated %}
+    <div class="text-align">
+        <h1>Acceso no permitido</h1>
+    </div>
+    {%else%}
+        {{flan.name}}<br>
+        {{flan.description}}<br>
+        <img src="{{ flan.image_url }}" alt="{{ flan.name }}">
+    {%endif%}
+{% endblock content %}

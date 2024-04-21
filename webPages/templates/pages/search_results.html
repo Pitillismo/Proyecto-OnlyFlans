@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+{% load static %}
+
+<section class='categorias'>
+  <h2>Resultados de Búsqueda</h2>
+</section>
+
+{% if flanes %}
+  <div class="row">
+    {% for flan in flanes %}
+      <div class="card" style="width: 18rem; text-align: center;">
+        <img src="{{flan.image_url}}" class="card-img-top" alt="{{flan.name}}">
+        <div class="card-body">
+          <h5 class="card-title">{{flan.name}}</h5>
+          <p class="card-text">{{flan.description}}</p>
+          <a href="{% url 'flan_detail' flan.id %}" class="btn btn-secondary">Detalles</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No se encontraron flanes que coincidan con tu búsqueda.</p>
+  <div>
+    <h3>Sugerencias</h3>
+    <div class="row">
+      {% for flan in suggestions %}
+        <div class="card" style="width: 18rem; text-align: center;">
+          <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ flan.name }}</h5>
+            <p class="card-text">{{ flan.description }}</p>
+            <a href="{% url 'flan_detail' flan.id %}" class="btn btn-secondary">Detalles</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% endblock content %}
