@@ -1,12 +1,23 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-{% if flan.is_private and not user.is_authenticated %}
-    <div class="text-align">
-        <h1>Acceso no permitido</h1>
-    </div>
-    {%else%}
-        {{flan.name}}<br>
-        {{flan.description}}<br>
-        <img src="{{ flan.image_url }}" alt="{{ flan.name }}">
-    {%endif%}
+<div class="container mt-5">
+    {% if flan.is_private and not user.is_authenticated %}
+        <div class="text-align">
+            <h1>Acceso no permitido</h1>
+        </div>
+    {% else %}
+        <div class="card mx-auto" style="max-width: 540px;">
+            <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}" style="max-width: 100%; height: auto;">
+            <div class="card-body">
+                <h5 class="card-title">{{ flan.name }}</h5>
+                <p class="card-text">{{ flan.description }}</p>
+                <p>Precio: ${{ flan.price }}</p>
+            </div>
+        </div>
+        <!-- Botón de compra -->
+        <button class="btn btn-success mx-auto d-block mt-3" style="width: auto;">
+            <i class="fas fa-shopping-cart"></i> Comprar
+        </button>
+    {% endif %}
+</div>
 {% endblock content %}

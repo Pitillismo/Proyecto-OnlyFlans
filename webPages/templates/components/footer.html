@@ -1,52 +1,32 @@
 <footer class="text-center text-darkgray" style="background-color: transparent; position: sticky; bottom: 0; width: 100%;">
-    <!-- Grid container -->
     <div class="container p-4">
-        <!-- Section: Links -->
-        <section>
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center footer-text">
-                <!-- Grid column -->
-                <div class="col-md-1 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="{% url 'about' %}" class="text-darkgray">Sobre Nosotros</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-1 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="{% url 'index' %}" class="text-darkgray">Inicio</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-1 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="{% url 'welcome' %}" class="text-darkgray">Bienvenido</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-                <div class="col-md-1 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="{% url 'contacto' %}" class="text-darkgray">Contacto</a>
-                    </h6>
-                </div>
-                <!-- Social icons -->
-                <div>
-                    <a href="https://facebook.com/" target="_blank" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://instagram.com/" target="_blank" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/" target="_blank" class="social-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Grid row-->
+        <section>        
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="row text-center d-flex justify-content-center footer-text">
+                    <!-- Aplicar el color directamente a cada enlace de ícono -->
+                    <div class="col-3 col-md-1 mb-1">
+                        <a href="{% url 'about' %}" class="text-darkgray" title="Sobre Nosotros" style="color: #333;">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-1 mb-1">
+                        <a href="{% url 'index' %}" class="text-darkgray" title="Inicio" style="color: #333;">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-1 mb-1">
+                        <a href="{% url 'welcome' %}" class="text-darkgray" title="Bienvenido" style="color: #333;">
+                            <i class="fas fa-birthday-cake"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 col-md-1 mb-1">
+                        <a href="{% url 'contacto' %}" class="text-darkgray" title="Contacto" style="color: #333;">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
                 <p>© 2024 OnlyFlans. Todos los derechos reservados. By Catalina Millan</p>
             </div>
         </section>
-        <!-- Section: Links -->
     </div>
 </footer>

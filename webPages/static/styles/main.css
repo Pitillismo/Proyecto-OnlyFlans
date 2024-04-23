@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -50,19 +52,6 @@ footer {
     }
 }
 
-.social-icon {
-    font-size: 25px; /* Confirma si prefieres 24px como sugerido antes o 25px */
-    margin-right: 20px;
-    color: darkgray;
-}
-
-.social-icon:last-child {
-    margin-right: 0;  /* Correcto para evitar el margen extra en el último ícono */
-}
-
-.text-darkgray {
-    color: #333; /* Un gris oscuro común, ajusta el código de color según necesites */
-}
 
 footer .container {
     height: 100%;
@@ -79,6 +68,8 @@ footer .container {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px; 
 }
 
 #carouselExampleControls {
@@ -91,7 +82,29 @@ footer .container {
     margin-top: 10px auto;
     padding: 20px;
 }
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre íconos */
+    color: #333;
+    font-size: 20px;
+}
 
+.footer-text .col-3 {
+    padding: 5px;  /* Ajusta el padding para un mejor espaciado */
+}
+
+.social-icon {
+    font-size: 20px;  /* Ajusta el tamaño del icono según sea necesario */
+    color: #333;  /* Color de los íconos */
+}
+.social-icon i {
+    color: #333 !important; /* Establece el color de los íconos a negro */
+    font-size: 20px; /* Tamaño de fuente para los íconos */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px; /* Espacio entre enlaces del navbar */
+}
 
 .search-form {
     display: flex;
@@ -178,4 +191,31 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Espacio alrededor de las cards */
+}
+
+.proximamente {
+    font-family: 'Dancing Script', cursive; /* Cambia la familia de fuente */
+    font-size: 50px; /* Cambia el tamaño de la fuente */
+    color: #333; /* Cambia el color de la fuente */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Añade un margen superior */
+    margin-bottom: 20px; /* Añade un margen inferior */
+}
+
+.visita_rrss {
+    color: #555; /* Cambia al color que desees */
+    text-align: center; /* Centra el texto */
+    font-family: 'Dancing Script', cursive; /* O la fuente que prefieras */
+    margin: 20px 0; /* Añade un margen superior e inferior */
+}
+
+.rrss-link {
+    color: #377e9c; /* Color para enlaces, similar al azul de enlace estándar */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* Hace el texto del enlace en negrita */
+}
+
+.rrss-link:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse para mayor interactividad */
+    color: #5b98f5; /* Cambia el color al pasar el mouse, por ejemplo, a un azul más claro */
 }

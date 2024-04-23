@@ -2,19 +2,23 @@
 {% block content %}
     
 <!-- Encabezado de la página -->
-    <h1>Bienvenido {{ user.username }}</h1>
-    <div class="row"> 
-        {% for flan in flanes%} 
-          <div class="card" style="width: 18rem;">
-            <img src="{{flan.image_url}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{flan.name}}</h5>
-              <p class="card-text">{{flan.description}}</p>
-              <a href="#" class="btn btn-primary">Comprar</a>
+    <div class="container mt-4">
+        <h1 class="text-center">¡Bienvenido/a {{ user.username }}!</h1>
+        <h5 class="text-center my-4">Estas ofertas son especiales para tí</h5>
+        <div class="row justify-content-center"> 
+            {% for flan in flanes %} 
+            <div class="card mx-2" style="width: 18rem;">
+                <img src="{{ flan.image_url }}" class="card-img-top" alt="Imagen de {{ flan.name }}">
+                <div class="card-body">
+                <h5 class="card-title">{{ flan.name }}</h5>
+                <p class="card-text">{{ flan.description }}</p>
+                <a href="#" class="btn btn-success mx-auto d-block mt-3">Comprar</a>
+                </div>
             </div>
-          </div>
-        {% endfor %}
+            {% endfor %}
         </div>
+    </div>
+
 
     <!-- Sección principal -->
     <div>

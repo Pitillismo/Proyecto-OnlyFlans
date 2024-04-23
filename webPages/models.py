@@ -1,6 +1,6 @@
 from django.db import models
 import uuid #crea un ID unico 
-from django.utils.text import slugify #
+from django.utils.text import slugify 
 
 # Create your models here. 
 # Haremos una tabla para nuestra base de datos.// Aca siempre hay que hacer Makemigrations y despues migrate
@@ -13,6 +13,7 @@ class Flan(models.Model):
     image_url = models.URLField()
     slug = models.SlugField(unique= True, blank= True)
     is_private = models.BooleanField(default= False)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def save(self, *args, **kwargs):
         if not self.slug:
