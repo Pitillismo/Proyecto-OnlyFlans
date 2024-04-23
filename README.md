@@ -40,6 +40,6 @@ Desafíos en el Desarrollo:
 •	Promociones y Descuentos: Se implementaron sistemas para gestionar promociones y aplicar descuentos de forma dinámica.
 Tecnologías Utilizadas
 
-Para el desarrollo del front-end de OnlyFlans, se utilizó HTML, CSS y Bootstrap, creando una interfaz de usuario atractiva y funcional. El back-end está potenciado por Django y Python, proporcionando un sistema robusto y escalable para la administración de contenido y usuarios.
+Para el desarrollo del front-end de OnlyFlans, se utilizó HTML, CSS y Bootstrap, creando una interfaz de usuario atractiva y funcional. El back-end está potenciado por Django y Python, proporcionando un sistema robusto y escalable para la administración de contenido y usuarios. Por último, se incorporan métodologias de Neuromarketing para la elección de ubicación de botones, priorización de botones con íconos, elección de colores (psicología de los colores), y utilización de visualización del precio sólo cuando se consulta el detalle del producto.
 
 
