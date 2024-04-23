@@ -10,6 +10,8 @@ from django.urls import reverse
 
 
 
+
+
 # Create your views here. Se deberian hacer con clases (django funciona con clases, siempre con mayusculas) y no funciones...
 
 def index (request):
@@ -86,3 +88,4 @@ def search_results(request):
     }
 
     return render(request, 'pages/search_results.html', context)
+
