@@ -89,3 +89,5 @@ def search_results(request):
 
     return render(request, 'pages/search_results.html', context)
 
+def pago(request):
+    return render (request, 'pages/pago.html')

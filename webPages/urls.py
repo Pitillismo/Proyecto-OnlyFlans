@@ -14,6 +14,5 @@ urlpatterns = [
     path('registration/', include('django.contrib.auth.urls')),
     path('flan/<int:flan_id>/', views.flan_detail, name='flan_detail'),
     path('search/', views.search_results, name='search_results'),
-    
 ]
 
