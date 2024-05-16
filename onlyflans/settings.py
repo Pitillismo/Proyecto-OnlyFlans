@@ -28,7 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if os.getenv('DEBUG')=='True' else False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*','proyecto-onlyflans-wwtk.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://localhost:8000','https://proyecto-onlyflans-wwtk.onrender.com']
 
 
 # Application definition
